@@ -8,3 +8,18 @@ new Promise((resolve,reject)=>{
     console.log('4')
     console.log('5')
 })
+
+
+
+myFirstAsync=()=>{
+    return new Promise(resolve=>{
+        setTimeout(()=>{
+            resolve('Success');
+        },1000);
+    })
+}
+msg=async()=>{
+    const successMessage = await myFirstAsync();
+    console.log('Yay!' ,successMessage);
+}
+msg();
