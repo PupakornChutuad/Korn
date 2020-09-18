@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
+import ResumeFormScreen from './screens/ResumeForm'
 function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -17,7 +17,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" options={{title:'Home Page'}} component={HomeScreen} />
+        <Stack.Screen name="Resumeform" options={{title:'Resume Form'}} component={ResumeFormScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
